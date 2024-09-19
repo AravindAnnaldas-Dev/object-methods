@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Methods</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 8px;
+      }
+      h1 {
+        color: rgb(255, 0, 0);
+        margin-top: 48px;
+        margin-bottom: 32px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+      }
+      h1:first-child {
+        margin-top: 0;
+      }
+      div {
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.32px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Object Creation Methods</h1>
+    <div>
+      <h2>Object.create()</h2>
+      <p>To create a new object</p>
+    </div>
+    <div>
+      <h2>Object.assign()</h2>
+      <p>Copying the other source objects and it modify the target object.</p>
+    </div>
+    <div>
+      <h2>Object.fromEntries()</h2>
+      <p>
+        which transforms a list of key-value pairs and return's in to an onject.
+      </p>
+    </div>
+    <h1>Object Property Methods</h1>
+    <div>
+      <h2>Object.defineProperty()</h2>
+      <p>To define or modify the property.</p>
+    </div>
+    <div>
+      <h2>Object.defineProperties()</h2>
+      <p>To define ore modify multiple properties.</p>
+    </div>
+    <div>
+      <h2>Object.getOwnPropertyDescriptor()</h2>
+      <p>Which returns the descriptor of an property in an element.</p>
+    </div>
+    <div>
+      <h2>Object.getOwnPropertyDescriptors()</h2>
+      <p>
+        Which returns the multiple decriptors of an multiple properties in an
+        element.
+      </p>
+    </div>
+    <div>
+      <h2>Object.hasOwn()</h2>
+      <p>Returns true/false whether the object has specified property.</p>
+    </div>
+    <div>
+      <h2>Object.keys()</h2>
+      <p>Which returns array of keys(enumerables only) of an object.</p>
+    </div>
+    <div>
+      <h2>Object.values()</h2>
+      <p>Which returns array of values of an object.</p>
+    </div>
+    <div>
+      <h2>Object.entries()</h2>
+      <p>which returns array of key-value pair's of an object.</p>
+    </div>
+    <h1>Object Inspection Methods</h1>
+    <div>
+      <h2>Object.is()</h2>
+      <p>which compares two values or objects and returns true/false.</p>
+    </div>
+    <div>
+      <h2>Object.isExtensible()</h2>
+      <p>
+        Returns true/false whether object can accept more properties or not.
+      </p>
+    </div>
+    <div>
+      <h2>Object.isFrozen()</h2>
+      <p>Returns true/ false whether the object has been frozen or not.</p>
+    </div>
+    <div>
+      <h2>Object.isSealed()</h2>
+      <p>Returns true/ false whether the object has been sealed or not.</p>
+    </div>
+    <div>
+      <h2>Object.getPrototypeOf()</h2>
+      <p>Returns proptotype of an object.</p>
+    </div>
+    <div>
+      <h2>Object.setPrototypeOf()</h2>
+      <p>To set the prototype for an object.</p>
+    </div>
+    <div>
+      <h2>Object.getOwnPropertyNames()</h2>
+      <p>
+        Which returns array of keys(enumerables and non-enumerables) of an
+        object.
+      </p>
+    </div>
+    <div>
+      <h2>Object.getOwnPropertySymbols()</h2>
+      <p>Which returns array of symbols of an object.</p>
+    </div>
+    <h1>Object Manipulation Methods</h1>
+    <div>
+      <h2>Object.freeze()</h2>
+      <p>
+        Which we cannot add property, cannot delete property and modify
+        property.(No deep freeze)
+      </p>
+    </div>
+    <div>
+      <h2>Object.seal()</h2>
+      <p>
+        Which we cannot add property, cannot delete property but we can modify
+        property.(No deep seal)
+      </p>
+    </div>
+    <div>
+      <h2>Object.preventExtensions()</h2>
+      <p>Which we cannot add properties to an object.</p>
+    </div>
+    <h1>Object Serialization Methods</h1>
+    <div>
+      <h2>JSON.stringify(obj)</h2>
+      <p>Coverts object in to an JSON string.</p>
+    </div>
+    <div>
+      <h2>JSON.parse(string)</h2>
+      <p>Coverts JSON string in to an object.</p>
+    </div>
+    <h1>Prototype Methods (Available via Object.prototype)</h1>
+    <div>
+      <h2>obj.hasOwnProperty()</h2>
+      <p>Returns true/false whether it has specified property or not.</p>
+    </div>
+    <div>
+      <h2>obj.toString()</h2>
+      <p>Returns string representing an object.</p>
+    </div>
+    <div>
+      <h2>obj.valueOf()</h2>
+      <p>
+        Returns primitive value representing an object.(returns same object)
+      </p>
+    </div>
+    <div>
+      <h2>obj.isPrototypeOf()</h2>
+      <p>whether obj is in the prototype chain of otherObj.</p>
+    </div>    
+    <div>
+      <h2>obj.propertyIsEnumerable()</h2>
+      <p>Checks if the specified property is enumerable or not.</p>
+    </div>
+
+    <script src="./object-methods.js"></script>
+  </body>
+</html>
